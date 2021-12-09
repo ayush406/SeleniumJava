@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <run>
+  <include name ="Smoke"/> 
+  </run>
+  </groups>
+  
+  <classes>
+  <class name ="TestNGTest.Test1"/>
+   <class name ="TestNGTest.Test2"/>
+   <class name ="TestNGTest.Test3"/>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test name="groups">
+  <classes>
+  <class name ="TestNGTest.DependsConcept"/>
+  
+  </classes>
+  </test>
+</suite> <!-- Suite -->

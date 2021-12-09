@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="URL" value="https://facebook.com"/>
+  <parameter name="user" value="Ayush"/>
+  <classes>
+  <class name ="TestNGTest.params_1">
+  </class>
+  <class name ="TestNGTest.params_2">
+  
+  </class>
+  
+  </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name ="Test2">
+  <classes>  
+  <class name="TestNGTest.SuiteAnn"/>
+  
+  </classes>
+  </test>
+</suite> <!-- Suite -->
